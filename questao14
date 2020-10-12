@@ -24,6 +24,7 @@ int main()
         printf("Digite o elemento da posicao %d: ",i+1);   //digitando os valores do vetor
         scanf("%f", &v[i]);
     }
+    printf("\n O vetor na ordem crescente>\n");
     qsort(v,n,sizeof(float),comparaCrescente);    //chamada da função, com os argumentos: vetor, tamanho n, tamanho do tipo, os parametros de comparação
     for(int i = 0; i < n; i++){
         printf("%.1f  ", v[i]);    //impressão do vetor organizado
